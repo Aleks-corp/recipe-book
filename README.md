@@ -18,7 +18,7 @@ Other Libraries: react-select, axios
 ### 1️⃣ Clone the Repository
 
 ```sh
-git clone https://github.com/your-username/recipe-book.git
+git clone https://github.com/Aleks-corp/recipe-book.git
 cd recipe-book
 ```
 
