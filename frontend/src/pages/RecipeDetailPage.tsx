@@ -1,10 +1,15 @@
 import { useEffect } from "react";
-import { fetchRecipeById } from "../redux/recipes.thunk";
+import { fetchRecipeById } from "../application/recipe/thunks";
 import { useNavigate, useParams } from "react-router-dom";
-import { useAppDispatch, useAppSelector } from "../redux/hooks";
-import { selectError, selectIsLoading, selectRecipe } from "../redux/selector";
+import { useAppSelector } from "../shared/hooks/useAppSelector";
+import { useAppDispatch } from "../shared/hooks/useAppDispatch";
+import {
+  selectError,
+  selectIsLoading,
+  selectRecipe,
+} from "../application/recipe/selectors";
 
-const RecipeInfo = () => {
+const RecipeDetailPage = () => {
   const navigate = useNavigate();
   const { id } = useParams<{ id: string }>();
   const dispatch = useAppDispatch();
@@ -84,4 +89,4 @@ const RecipeInfo = () => {
   );
 };
 
-export default RecipeInfo;
+export default RecipeDetailPage;

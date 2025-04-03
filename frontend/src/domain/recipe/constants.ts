@@ -1,4 +1,4 @@
-import { FilterOptions } from "../types/filter.types";
+import { FilterOptions } from "./types";
 
 export const filterTypes = [
   { value: "ingredient", label: "Ingredient" },
